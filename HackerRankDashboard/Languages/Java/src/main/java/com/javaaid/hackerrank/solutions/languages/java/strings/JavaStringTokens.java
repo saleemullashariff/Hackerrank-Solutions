@@ -23,7 +23,8 @@ public class JavaStringTokens {
 			}
 		}
 		if (found) {
-			String[] str = s.split("[, '@_.?!]+");
+			//String[] str = s.split("[, '@_.?!]+");
+			String[] str = s.split("[^0-9]");
 			int length = str.length;
 			if (str[0].length() == 0 || str[str.length - 1].length() == 0) {
 				length--;

@@ -14,7 +14,7 @@ public class Student extends Person {
 	private int[] testScores;
 
 	Student(String firstName, String lastName, int id, int[] testScores) {
-		super(firstName, lastName, id);
+		super(id);
 
 		this.testScores = testScores;
 	}
